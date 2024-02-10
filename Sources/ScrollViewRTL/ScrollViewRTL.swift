@@ -25,7 +25,7 @@ import SwiftUI
 /// }
 /// ```
 ///
-struct ScrollViewRTL<Content: View>: View {
+public struct ScrollViewRTL<Content: View>: View {
     /// The content to be displayed in the scroll view.
     @ViewBuilder var content: Content
     
@@ -44,23 +44,23 @@ struct ScrollViewRTL<Content: View>: View {
     ///   - type: The type of the row, either `.horizontal` or `.vertical`.
     ///   - showsIndicators: A boolean value indicating whether to show scroll indicators.
     ///   - content: The content to be displayed in the scroll view.
-    init(type: RowType, showsIndicators: Bool = true, @ViewBuilder content: () -> Content) {
+    public init(type: RowType, showsIndicators: Bool = true, @ViewBuilder content: () -> Content) {
         self.type = type
         self.showsIndicators = showsIndicators
         self.content = content()
     }
 
     /// The body of the view.
-    var body: some View {
-        if #available(iOS 16.4, *) {
+    public var body: some View {
+        if #available(iOS 17.0, *) {
             scrollViewForModerniOS
         } else {
             scrollViewForEarlieriOS
         }
     }
 
-    /// The scroll view implementation for iOS 16.4 and later.
-    @available(iOS 16.4, tvOS 16.4, macOS 13.3, *)
+    /// The scroll view implementation for iOS 17.0 and later.
+    @available(iOS 17.0, tvOS 16.4, macOS 13.3, *)
     private var scrollViewForModerniOS: some View {
         ScrollView(type.scrollAxis, showsIndicators: showsIndicators) {
             content
@@ -93,12 +93,12 @@ struct ScrollViewRTL<Content: View>: View {
 }
 
 /// An enum representing the type of row for the `ScrollViewRTL` struct.
-enum RowType {
+public enum RowType {
     case horizontal
     case vertical
 
     /// The scroll axis associated with the row type.
-    var scrollAxis: Axis.Set {
+    public var scrollAxis: Axis.Set {
         switch self {
         case .horizontal:
             return .horizontal
