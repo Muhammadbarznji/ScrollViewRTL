@@ -1,0 +1,22 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Change language to english" : {
+
+    },
+    "Item %lld" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غرض %lld"
+          }
+        }
+      }
+    },
+    "تغيير اللغة إلى العربية" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		6AB7DA082B6CCA3D00873F70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7DA072B6CCA3D00873F70 /* ContentView.swift */; };
 		6AB7DA0A2B6CCA4000873F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7DA092B6CCA4000873F70 /* Assets.xcassets */; };
 		6AB7DA0E2B6CCA4000873F70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7DA0D2B6CCA4000873F70 /* Preview Assets.xcassets */; };
+		6AB7DA162B6CDDD900873F70 /* ScrollViewRTL in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB7DA152B6CDDD900873F70 /* ScrollViewRTL */; };
+		6AB7DA182B6D451500873F70 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7DA172B6D451500873F70 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		6AB7DA092B6CCA4000873F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB7DA0B2B6CCA4000873F70 /* ScrollViewRTLExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScrollViewRTLExample.entitlements; sourceTree = "<group>"; };
 		6AB7DA0D2B6CCA4000873F70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AB7DA172B6D451500873F70 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB7DA162B6CDDD900873F70 /* ScrollViewRTL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				6AB7DA052B6CCA3D00873F70 /* ScrollViewRTLExampleApp.swift */,
 				6AB7DA072B6CCA3D00873F70 /* ContentView.swift */,
+				6AB7DA172B6D451500873F70 /* Localizable.xcstrings */,
 				6AB7DA092B6CCA4000873F70 /* Assets.xcassets */,
 				6AB7DA0B2B6CCA4000873F70 /* ScrollViewRTLExample.entitlements */,
 				6AB7DA0C2B6CCA4000873F70 /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = ScrollViewRTLExample;
+			packageProductDependencies = (
+				6AB7DA152B6CDDD900873F70 /* ScrollViewRTL */,
+			);
 			productName = ScrollViewRTLExample;
 			productReference = 6AB7DA022B6CCA3D00873F70 /* ScrollViewRTLExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,8 +119,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 6AB7D9F92B6CCA3D00873F70;
+			packageReferences = (
+				6AB7DA142B6CDDD900873F70 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 6AB7DA032B6CCA3D00873F70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +141,7 @@
 			files = (
 				6AB7DA0E2B6CCA4000873F70 /* Preview Assets.xcassets in Resources */,
 				6AB7DA0A2B6CCA4000873F70 /* Assets.xcassets in Resources */,
+				6AB7DA182B6D451500873F70 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +291,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrollViewRTLExample;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -316,6 +330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrollViewRTLExample;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -363,6 +378,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6AB7DA142B6CDDD900873F70 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AB7DA152B6CDDD900873F70 /* ScrollViewRTL */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ScrollViewRTL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AB7D9FA2B6CCA3D00873F70 /* Project object */;
 }
