@@ -71,11 +71,11 @@ To use ScrollViewRTL in your SwiftUI views, follow these steps:
     
 ## Example Project
 
-To help you get started quickly, an example project demonstrating the usage of ScrollViewRTL is included in the [Example](Example/) directory. The example project showcases a SwiftUI application with language-changing buttons and a ScrollViewRTL instance for both horizontal and vertical scrolling.
+To help you get started quickly, an example project demonstrating the usage of ScrollViewRTL is included in the [Example](https://github.com/Muhammadbarznji/ScrollViewRTL/tree/main/ScrollViewRTLExample) directory. The example project showcases a SwiftUI application with language-changing buttons and a ScrollViewRTL instance for both horizontal and vertical scrolling.
 
 To run the example project:
 
-1. Navigate to the [Example](Example/) directory.
+1. Navigate to the [Example](https://github.com/Muhammadbarznji/ScrollViewRTL/tree/main/ScrollViewRTLExample) directory.
 2. Open the `ScrollViewRTLExample.xcodeproj` file in Xcode.
 3. Build and run the project.
 
